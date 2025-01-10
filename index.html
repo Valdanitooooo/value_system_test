@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>价值体系测试</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>价值体系测试</title>
 </head>
+
 <body>
-  <div style="text-align: center;">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBX6p2RNTUabuzs47MZQ52eRjulPPrJhhLuiWYtQfPxBtsXA/viewform?embedded=true" width="640" height="490" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe>
-  </div>
+    <style>
+        .responsive-iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* 占满整个视口高度 */
+            overflow: hidden;
+        }
+
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+
+    <div class="responsive-iframe-container">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfBX6p2RNTUabuzs47MZQ52eRjulPPrJhhLuiWYtQfPxBtsXA/viewform?usp=sf_link"></iframe>
+    </div>
+
 </body>
+
 </html>
